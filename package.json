@@ -1,0 +1,20 @@
+{
+  "name": "api-caller",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc && yarn copy-static",
+    "start": "node dist/index.js",
+    "copy-static": "copyfiles -u 1 src/static/**/* dist/"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.5",
+    "copyfiles": "^2.4.1",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  }
+}
